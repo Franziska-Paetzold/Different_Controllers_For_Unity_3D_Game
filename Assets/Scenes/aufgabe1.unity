@@ -455,5 +455,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 293d748214f7b554995922a9dac9f541, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerCube: {fileID: 1136371287}
   playerCubeTransform: {fileID: 1136371292}
   delaySpeed: 0.01

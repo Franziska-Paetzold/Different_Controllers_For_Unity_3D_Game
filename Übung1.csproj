@@ -247,11 +247,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\CameraSript.cs" />
-    <Compile Include="Assets\Scripts\moveBlueCube.cs" />
-    <Compile Include="Assets\Scripts\moveCube.cs" />
-    <Compile Include="Assets\Scripts\moveYellowCube.cs" />
-    <Compile Include="Assets\Scripts\PlayerCube.cs" />
+    <Compile Include="Assets\rotateCubeAroundAxis.cs" />
+    <Compile Include="Assets\Scripts\ScripsFor0\moveBlueCube.cs" />
+    <Compile Include="Assets\Scripts\ScripsFor0\moveCube.cs" />
+    <Compile Include="Assets\Scripts\ScripsFor0\moveYellowCube.cs" />
+    <Compile Include="Assets\Scripts\ScriptsFor1\CameraSript.cs" />
+    <Compile Include="Assets\Scripts\ScriptsFor1\PlayerCube.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
