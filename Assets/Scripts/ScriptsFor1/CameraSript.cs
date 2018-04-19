@@ -11,25 +11,26 @@ public class CameraSript : MonoBehaviour {
 
     void Start () {
         //Abstand Kamera zum Objekt
-    
-        //  offset = transform.position - playerCube.transform.position;
-        offset = new Vector3 (0.0f, 1.0f, -5.0f);
+            offset = transform.position - playerCube.transform.position;
+        //offset = new Vector3 (0.0f, 1.0f, -5.0f);
 
+        //for creating a smooth slerp
         previousRotation = transform.rotation;
     }
 	
 	// Update is called once per frame
 	void Update () {
         //transform.position = playerCube.transform.position + offset;
-
-        //better to use Time.time or Time.deltaTime?
-        Quaternion targetRotation = Quaternion.Slerp(playerCube.transform.rotation, previousRotation, delaySpeed);
         
-        transform.rotation = targetRotation;
+        Quaternion targetRotation = Quaternion.Slerp(previousRotation, playerCube.transform.rotation, delaySpeed);
+        
+        //product of Quaternion and Vector3 is Vector3 --> Matrizenmultiplikation!
         Vector3 targetRotated = targetRotation * offset;
 
         transform.position = playerCube.transform.position + targetRotated;
-        previousRotation = targetRotation;
+        transform.rotation = targetRotation;
+
+        previousRotation = transform.rotation;
     }
 }
 

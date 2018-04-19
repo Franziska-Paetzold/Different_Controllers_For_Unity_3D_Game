@@ -456,5 +456,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerCube: {fileID: 1136371287}
-  playerCubeTransform: {fileID: 1136371292}
-  delaySpeed: 0.01
+  delaySpeed: 0.06
