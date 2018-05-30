@@ -38,3 +38,6 @@ sysinfo.txt
 
 #files that are making trouble by up and download on different devices
 PlayerScriptArduino.cs
+PlayerCubeLM.cs
+UserInput.cs
+aufgabe2_leap_motion.unity
