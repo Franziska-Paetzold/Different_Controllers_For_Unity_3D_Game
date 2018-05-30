@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/aufgabe2_leap_motion.unity
+- path: Assets/aufgabe05_vuforia.unity
   isLoaded: 1
   isActive: 1
